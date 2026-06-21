@@ -5,11 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>비디오 플레이어</title>
   <style>
+    /* Optima 웹폰트 등록 */
+    @font-face {
+      font-family: 'Optima';
+      src: url('OPTIMA.TTF') format('truetype');
+    }
+    
     * { margin: 0; padding: 0; box-sizing: border-box; }
     
     body {
       background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: Optima, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       color: #333;
       display: flex;
       justify-content: center;
@@ -289,36 +295,36 @@
     <div class="controls-section">
       <div class="keyboard-hints">
         <div class="hint">
-          <div class="hint-key">Q</div>
-          <div class="hint-text">현재 시각<br></div>
+          <div class="hint-key">1</div>
+          <div class="hint-text">Current time<br></div>
         </div>
         <div class="hint">
-          <div class="hint-key">W</div>
-          <div class="hint-text">스톱워치<br>스페이스: 시작/정지</div>
+          <div class="hint-key">2</div>
+          <div class="hint-text">Stopwatch<br>Space: Start/Stop</div>
         </div>
         <div class="hint">
-          <div class="hint-key">E</div>
-          <div class="hint-text">타이머<br>시간 직접 설정</div>
+          <div class="hint-key">3</div>
+          <div class="hint-text">Timer<br>Setting the Time</div>
         </div>
       </div>
 
       <!-- 타이머 입력 섹션 (모드3에서만 표시) -->
       <div id="timerInputSection">
-        <label>타이머 설정 (시간:분:초)</label>
+        <label>Timer settings (Hours:Minutes:Seconds)</label>
         <div class="timer-inputs">
           <div class="timer-input">
             <input type="number" id="timerHours" min="0" max="23" placeholder="00" value="0">
-            <label>시간</label>
+            <label>Hours</label>
           </div>
           <div class="timer-sep">:</div>
           <div class="timer-input">
             <input type="number" id="timerMinutes" min="0" max="59" placeholder="00" value="0">
-            <label>분</label>
+            <label>Minutes</label>
           </div>
           <div class="timer-sep">:</div>
           <div class="timer-input">
             <input type="number" id="timerSeconds" min="0" max="59" placeholder="00" value="0">
-            <label>초</label>
+            <label>Seconds</label>
           </div>
         </div>
       </div>
