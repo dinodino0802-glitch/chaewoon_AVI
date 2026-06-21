@@ -23,7 +23,7 @@ let timerTime = 500;
 // === 설정 (수정 가능한 부분) ===
 const CONFIG = {
   textOverlayPath: 'KakaoTalk_Photo_2026-06-22-04-23-07.png',  // PNG 파일 경로
-  timerSoundPath: '컴포지션 1_7.mp3',    // 오디오 파일 경로
+  timerSoundPath: 'alarm.m4a',    // 오디오 파일 경로
   fadeInDuration: 0,                   // 페이드인 시간 (ms)
   
   // === 레터박스 색상 설정 ===
