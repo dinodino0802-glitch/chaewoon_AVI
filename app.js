@@ -18,7 +18,7 @@ let isIntroPlayed = false;
 let stopwatchRunning = false;
 let stopwatchTime = 0;
 let timerRunning = false;
-let timerTime = 0;
+let timerTime = 500;
 
 // === 설정 (수정 가능한 부분) ===
 const CONFIG = {
